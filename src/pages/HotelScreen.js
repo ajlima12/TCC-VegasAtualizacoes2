@@ -108,11 +108,7 @@ const styles = StyleSheet.create({
     position: "relative",
   },
 
-  favoriteButton: {
-    position: "absolute",
-    top: 7,
-    right: 10,
-  },
+  
   hotelName: {
     fontSize: 24,
     fontWeight: "bold",

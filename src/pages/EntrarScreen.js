@@ -13,21 +13,7 @@ function EntrarScreen() {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerShown: true,
-      title: 'Profile',
-      headerTitleAlign: 'center',
-      headerTitleStyle: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        color: 'white',
-      },
-      headerStyle: {
-        backgroundColor: '#147DEB',
-        height: 60,
-        borderBottomColor: 'transparent',
-        shadowColor: 'transparent',
-      },
-     
+      headerShown: false, // Removendo a barra de navegação
     });
   }, [navigation]); 
 

@@ -1,4 +1,10 @@
 export const commerceImages = {
+  'Farmacias CVS': [
+    require('../assets/farmacia1.png'),
+    require('../assets/farmacia2.png'),
+    require('../assets/farmacia3.png'),
+  
+  ],
   'Le Cirque': [
     require('../assets/lecirque1.png'),
     require('../assets/lecirque2.png'),
@@ -40,12 +46,12 @@ export const commerceImages = {
    
   ],
 
-  // 'Farmácias CVS': [
-  //   require('../assets/farmacia1.png'),
-  //   require('../assets/farmacia2.png'),
-  //   require('../assets/farmacia3.png'),
+  'Farmácias CVS': [
+     require('../assets/farmacia1.png'),
+     require('../assets/farmacia2.png'),
+     require('../assets/farmacia3.png'),
    
-  // ],
+   ],
 };
 
 export const hotelImages = {
@@ -59,7 +65,7 @@ export const hotelImages = {
     require('../assets/lazer2.jpg'),
     require('../assets/quarto2.jpg'),
   ],
-  'Holiday Inn Club Vacations at Desert Club Resort, an IHG Hotel': [
+  'Holiday Inn Club Vacations at Desert Club Resort': [
     require('../assets/hotel3.jpg'),
     require('../assets/lazer3.jpg'),
     require('../assets/quarto3.jpg'),
@@ -115,7 +121,7 @@ export const PontoTuristicoImages = {
     require('../assets/roda2.png'),
     require('../assets/roda3.png'),
   ],
-  'Helicopeter Tours Las Vegas': [
+  'Helicopeter Tours': [
     require('../assets/ptaviao1.png'),
     require('../assets/ptaviao2.png'),
     require('../assets/ptaviao3.png'),

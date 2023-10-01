@@ -23,14 +23,14 @@ function PacoteCard({ pacote }) {
         <Text style={styles.pacoteName}>{agencia}</Text>
         {/* chamar a função toggleFavorite passando o nome do hotel */}
    <TouchableOpacity
-        onPress={() => toggleFavorite(companhia_aerea)}
+        onPress={() => toggleFavorite(valor)}
         style={styles.favoriteButton}
       >
         <MaterialIcons
           // verifica se o hotel esta na lista de favoritos, caso esteja ele exibira o icone de favorito preenchido, caso nao esteja ele exibira o icone de favorito vazio
-          name={user && userInformations?.favorites.includes(companhia_aerea) ? 'favorite' : 'favorite-border'}
+          name={user && userInformations?.favorites.includes(valor) ? 'favorite' : 'favorite-border'}
           size={24}
-          color={user && userInformations?.favorites.includes(companhia_aerea) ? 'red' : '#0D4BF2'}
+          color={user && userInformations?.favorites.includes(valor) ? '#0D4BF2' : '#0D4BF2'}
         />
       </TouchableOpacity>
       </View>
@@ -324,9 +324,11 @@ marginBottom: 8,
   },
   favoriteButton: {
     position: "absolute",
-    top: 7,
+    top: -7,
     right: 10,
-  },
+    marginRight: -10,
+   
+  }, 
 });
 
 

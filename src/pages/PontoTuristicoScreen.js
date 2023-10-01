@@ -39,7 +39,7 @@ function PontoTuristicoCard({ pontoTuristico }) {
           // verifica se o hotel esta na lista de favoritos, caso esteja ele exibira o icone de favorito preenchido, caso nao esteja ele exibira o icone de favorito vazio
           name={user && userInformations?.favorites.includes(nome_ptur) ? 'favorite' : 'favorite-border'}
           size={24}
-          color={user && userInformations?.favorites.includes(nome_ptur) ? 'red' : '#0D4BF2'}
+          color={user && userInformations?.favorites.includes(nome_ptur) ? '#0D4BF2' : '#0D4BF2'}
         />
       </TouchableOpacity>
       </View>
@@ -149,10 +149,10 @@ const styles = StyleSheet.create({
   },
   favoriteButton: {
     position: "absolute",
-    top: 7,
-    right: 10,
-  }
-,  
+    top: 0,
+    right: 12,
+    marginRight: -10  
+  },  
   pontoTuristicoCard: {
     width: '90%',
     alignSelf: 'center',

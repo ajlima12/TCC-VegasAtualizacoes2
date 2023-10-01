@@ -31,7 +31,9 @@ function ComercioCard({ commerce }) {
     <View style={styles.commerceCard}>
       <View style={styles.commerceHeader}>
        {/* chamar a função toggleFavorite passando o nome do hotel */}
-     <TouchableOpacity
+     
+        <Text style={styles.commerceName}>{nome_comer}</Text>
+        <TouchableOpacity
         onPress={() => toggleFavorite(nome_comer)}
         style={styles.favoriteButton}
       >
@@ -39,10 +41,9 @@ function ComercioCard({ commerce }) {
           // verifica se o hotel esta na lista de favoritos, caso esteja ele exibira o icone de favorito preenchido, caso nao esteja ele exibira o icone de favorito vazio
           name={user && userInformations?.favorites.includes(nome_comer) ? 'favorite' : 'favorite-border'}
           size={24}
-          color={user && userInformations?.favorites.includes(nome_comer) ? 'red' : '#0D4BF2'}
+          color={user && userInformations?.favorites.includes(nome_comer) ? '#0D4BF2' : '#0D4BF2'}
         />
       </TouchableOpacity>
-        <Text style={styles.commerceName}>{nome_comer}</Text>
       </View>
       <View style={styles.carouselContainer}>
         <Swiper autoplay height={150}>
@@ -152,9 +153,11 @@ const styles = StyleSheet.create({
   },
   favoriteButton: {
     position: "absolute",
-    top: 7,
+    top: -7,
     right: 10,
-  },
+    marginRight: -10,
+   
+  }, 
   
   contentContainer: {
     paddingBottom: 20,
@@ -163,7 +166,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   commerceCard: {
-    width: '90%',
+    width: '93%',
     alignSelf: 'center',
     backgroundColor: '#FFFFFF',
     borderRadius: 20,

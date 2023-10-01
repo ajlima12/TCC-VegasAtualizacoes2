@@ -17,7 +17,7 @@ const SavedScreen = () => {
       },
       headerStyle: {
         backgroundColor: '#147DEB',
-        height: 70,
+        height: 60,
         borderBottomColor: 'transparent',
         shadowColor: 'transparent',
       },
@@ -75,6 +75,7 @@ const SavedScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor:'#F1EFFF'
   },
   scrollViewContent: {
     paddingTop: 20,

@@ -96,7 +96,7 @@ export function HotelCard({ hotel }) {
           // verifica se o hotel esta na lista de favoritos, caso esteja ele exibira o icone de favorito preenchido, caso nao esteja ele exibira o icone de favorito vazio
           name={user && userInformations?.favorites.includes(nome_hot) ? 'favorite' : 'favorite-border'}
           size={24}
-          color={user && userInformations?.favorites.includes(nome_hot) ? 'red' : '#0D4BF2'}
+          color={user && userInformations?.favorites.includes(nome_hot) ? '#0D4BF2' : '#0D4BF2'}
         />
       </TouchableOpacity>
     </View>
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   hotelCard: {
-    width: "90%",
+    width: "92%",
     alignSelf: "center",
     backgroundColor: "#FFFFFF",
     borderRadius: 20,
@@ -138,8 +138,10 @@ const styles = StyleSheet.create({
   favoriteButton: {
     position: "absolute",
     top: 7,
-    right: 10,
-  },
+    right: 12,
+    marginRight: -6,
+   
+  },   
   hotelName: {
     fontSize: 24,
     fontWeight: "bold",

@@ -17,16 +17,16 @@ const HomeScreen = () => {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: true,
-      title: "Vegas Experience",
+      title: "VegasExperience",
       headerTitleAlign: "center",
       headerTitleStyle: {
-        fontSize: 20,
+        fontSize: 22,
         fontWeight: "bold",
         color: "white",
       },
       headerStyle: {
         backgroundColor: "#147DEB",
-        height: 70,
+        height: 80,
         borderBottomColor: "transparent",
         shadowColor: "transparent",
       },

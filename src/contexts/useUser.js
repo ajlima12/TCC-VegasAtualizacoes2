@@ -8,8 +8,8 @@ import { useNavigation } from '@react-navigation/native';
 export const UserContext = createContext();
 
 export function UserProvider({ children }) {
-  const [user, setUser] = useState(null);
-  const [userInformations, setUserInformations] = useState(null);
+  const [user, setUser] = useState(true);
+  const [userInformations, setUserInformations] = useState(true);
   const [getInformations, setGetInformations] = useState(true);
   
   const { navigate } = useNavigation();
